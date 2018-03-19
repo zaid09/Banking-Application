@@ -1,0 +1,506 @@
+
+<!DOCTYPE HTML>
+<html lang="zxx">
+<head>
+<title>Nebulae Cloud</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Online Banking" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--// Meta tag Keywords -->
+<!-- css files -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> <!-- Bootstrap-Core-CSS -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" /> <!-- Banner-Slider-CSS -->
+<!-- //css files -->
+<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+<!-- online-fonts -->
+</head>
+<body>
+
+ <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login to Nebulae Cloud Banking</h4>
+        </div>
+        <div class="modal-body">
+          <form action="LoginServlet" method="POST" role="form">
+  			<div class="form-group">
+		   	<label for="cid">Enter Customer Id:</label>
+		    <input type="text" class="form-control" id="cid" name="cid" placeholder="Please Enter your Customer Id" required>
+		  	</div>
+		  	<div class="form-group">
+		    <label for="pwd">Enter Password:</label>
+		    <input type="password" class="form-control" id="pwd" name ="pwd" placeholder="Please Enter your Password" required>
+		  	</div>
+		  	<div class="checkbox">
+		    <label><input type="checkbox"> Remember me</label>
+		  	</div>
+		  	<div class="form-group" style="padding-left:360px;">
+		  	<button type="submit" class="btn btn-success">Login</button>
+          <button  class="btn btn-info" data-dismiss="modal">Forgot Password</button>
+			</div>
+			</form>
+        	</div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- navigation -->
+<div class="nav-links">	
+		<div class="header-w3l">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><h1><span>Nebulae Cloud</span> Banking</h1></a>
+				<div class="call-w3l">
+<!-- 					<img src="images/login.png" width="10" height="16"> -->
+						<a class="navbar-brand" href="#"  style="padding-left: 120px;"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModal">Login</button></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+			</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<div class="w3l-nav">
+				<ul class="nav navbar-nav link-effect">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="#about" class="scroll">About Us</a></li>
+					<li><a href="#services" class="scroll">Services</a></li>
+					<li><a href="#gallery" class="scroll">Investors</a></li>	
+					<li><a href="#contact" class="scroll">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="codecon_half">
+				<div class="expSearchBox">
+					<div class="expSearchFrom">
+						<input id="field" type="search" placeholder="Search here"/>
+						<div class="close">
+							<span class="front"></span>
+							<span class="back"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+</div>
+<!-- //navigation -->
+<!-- banner section -->
+<div class="banner-slider">
+				<div class="container">
+						<!--Slider-->	
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="w3l_banner_info">
+								<h3>We love simplicity</h3>
+								<p>Bank You Can Trust Upon. Just Eat,Drink and Bank.We recognize the importance of good service, which is generally accepted as a key factor in attaining fairness for all.</p>
+								<div class="agileits_w3layouts_more menu__item">
+									<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_info">
+								<h3>Don't hesitate to accept credit cards today!</h3>
+								<p>Use credit. The first rule of keeping your payments safe is to always use a credit card. They come with better consumer protections against fraud, and your liability's capped at $10. Our cards also have zero-liability policies.</p>					
+								<div class="agileits_w3layouts_more menu__item">
+									<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w3l_banner_info">
+								<h3>Two tips for safe internet banking- Safety and Security</h3>
+								<p>Online banking can save you a lot of time and effort, you can undertake most transactions from the comforts of your home. However, it is crucial to use internet banking safely.</p>						
+								<div class="agileits_w3layouts_more menu__item">
+									<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //Slider -->
+
+				</div>
+</div>
+<!-- Modal1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<!-- <img src="images/g7.jpg" alt=" " class="img-responsive"> -->
+					<h5>Read more....</h5>
+					<p>Please visit our Policy page to learn more...</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //Modal1 -->
+<!-- //banner section -->
+<!-- about -->
+<div class="about" id="about">
+	<div class="container">
+		<h3 class="w3l-title"><span>About</span> Us</h3>
+		<div class="w3-agileits-about-grids">
+			<div class="col-md-5 agile-about-right">
+				<img src="images/3.png" alt="" />
+			</div>
+			<div class="col-md-7 agile-about-left">
+				<h3 class="w3l-sub">Profile </h3>
+				<p class="sub-p">Nebulae Cloud Bank was incorporated in August 2017.</p>
+				<p class="sub-p2">As of September 30, 2017, the Bank had a nationwide distribution network of 4 branches and 259 ATM's in 4 cities/towns.</p>
+				<p class="sub-p3">NCB recognizes the importance of good corporate governance, which is generally accepted as a key factor in attaining fairness for all stakeholders and achieving organizational efficiency. This Corporate Governance Policy, therefore, is established to provide a direction and framework for managing and monitoring the bank in accordance with the principles of good corporate governance.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //about -->
+<!-- wthree-slid -->
+	<div class="wthree-slid"> 
+		<div class="col-sm-6 col-xs-8 wthree-slid-right"> 
+			<h4>The best way to save your time and money</h4>
+			<p>Express bank will save your time, money and improve the way you manage your business finances. You will have the control you need, with multiple disbursement and payment options, along with many other cash management features to help you optimize your business cash flow</p>
+		<a class="w3l-cont scroll" href="#contact">Contact Us</a>
+		</div> 
+		<div class="col-sm-6 col-xs-4 wthree-slid-left"> 
+			 
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- wthree-slid --> 
+<!-- services -->
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="w3l-title"><span>Our</span> Services</h3>
+			<div class="col-md-4 services-grids-1">
+				
+			</div>
+			<div class="col-md-4 services-grids">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-icon">
+						<i class="fa fa-money" aria-hidden="true"></i>
+					</div>
+					<div class="wthree-services-info">
+						<h5>Corporate Internet banking  </h5>
+						<p>We are pleased to inform you that we have introduced an upgraded and enhanced version of our Corporate Internet Banking. </p>
+					</div>
+				</div>
+				<div class="wthree-services-grid w3l-agile">
+					<div class="wthree-services-icon">
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</div>
+					<div class="wthree-services-info">
+						<h5>Personal Internet banking</h5>
+						<p>The new website enables easier navigation, simpler and faster transactions and a more secure environment for all your banking needs. </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 services-grids w3l-seco">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-icon">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</div>
+					<div class="wthree-services-info">
+						<h5>Mobile banking</h5>
+						<p>Now enjoy freedom to transact securely through our mobile internet banking through One Time SMS password (OTP)</p>
+					</div>
+				</div>
+				<div class="wthree-services-grid w3l-agile">
+					<div class="wthree-services-icon">
+						<i class="fa fa-signal" aria-hidden="true"></i>
+					</div>
+					<div class="wthree-services-info">
+						<h5>Loan</h5>
+						<p>Enjoy loans at minimal rates. </p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //services -->
+<!--stats-->
+<div data-vide-bg="video/coins">
+	<div class="stats center-container" id="stats">
+		<div class="container">
+			<div class="stats-info">
+				<div class="col-md-4 col-xs-4 stats-grid slideanim">
+					<i class="fa fa-user-o" aria-hidden="true"></i>
+					<div class="agile-one">
+						<h4 class="stats-info">Employees</h4>
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='300' data-delay='.5' data-increment="1">12760</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-4 stats-grid slideanim">
+					<i class="fa fa-globe" aria-hidden="true"></i>
+					<div class="agile-one">
+						<h4 class="stats-info">Locations</h4>
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='4' data-delay='.5' data-increment="1">12760</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-4 stats-grid slideanim">
+					<i class="fa fa-diamond" aria-hidden="true"></i>
+					<div class="agile-one">
+						<h4 class="stats-info">Awards Winning</h4>
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='11' data-delay='.5' data-increment="1">12760</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//stats-->
+
+ <!--/gallery-->
+ <div class="gallery" id="gallery">
+	<div class="container">
+		<h3 class="w3l-title"><span>Our</span> Investors</h3>
+		<div class="agile_gallery_grids w3-agile">
+				<ul class="clearfix demo">
+					<li>
+						<div class="gallery-grid1">
+							<img src="investors/jpmorgan.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>JPMorgan Chase</h4>
+								<p>JPMorgan Chase and Co. is a U.S. multinational banking and financial services holding company headquartered in New York City.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="investors/ge.png" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>General Electric</h4>
+								<p>General Electric is an American multinational conglomerate corporation incorporated in New York.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="investors/hsbc.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>HSBC</h4>
+								<p>HSBC Holdings plc is a British multinational banking and financial services holding company, tracing its origin to a hong in Hong Kong.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="investors/volks.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>Volkswagen</h4>
+								<p>Volkswagen, shortened to VW, is a German automaker founded on May 28, 1937 by the German Labour Front and headquartered in Wolfsburg.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="investors/apple.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>Apple</h4>
+								<p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gallery-grid1">
+							<img src="investors/google.jpg" alt=" " class="img-responsive" />
+							<div class="p-mask">
+								<h4>Google</h4>
+								<p>Google Inc. is an American multinational technology company that specializes in Internet-related services and products.</p>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+	</div>
+</div>
+<!--//gallery-->
+<!-- mail -->
+<div class="mail" id="contact">
+	<div class="container">
+		<h3 class="w3l-title"><span>Contact</span> Us</h3>
+		<div class="mail-w3l-agile">
+			<div class="col-md-6 col-sm-6 contact-left-w3ls">
+				<div class="w3l-cont-mk">
+					<img src="images/img2.jpg">
+				</div>
+				<h3>Contact Info</h3>
+				<div class="visit">
+					<div class="col-md-2 col-sm-2 col-xs-2 contact-icon-wthree">
+						<i class="fa fa-home" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 contact-text-agileinf0">
+						<h4>Visit us</h4>
+						<p>Bengaluru, India</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="mail-w3">
+					<div class="col-md-2 col-sm-2 col-xs-2 contact-icon-wthree">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 contact-text-agileinf0">
+						<h4>Mail us</h4>
+						<p><a href="mailto:info@example.com">info@example.com</a></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="call">
+					<div class="col-md-2 col-sm-2 col-xs-2 contact-icon-wthree">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 contact-text-agileinf0">
+						<h4>Call us</h4>
+						<p>+919988776655</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 agileinfo_mail_grid_right">
+				<h3>Get In Touch</h3>
+				<form action="#" method="post">
+					<div class="wthree_contact_left_grid">
+						<input type="text" name="Name" placeholder="Name" required>
+						<input type="email" name="Email" placeholder="Email" required>
+						<input type="text" name="number" placeholder="Phone Number" required>
+					</div>
+					<textarea name="Message" placeholder="Message......." required></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- <div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555" allowfullscreen></iframe>
+</div> -->
+<!-- //mail -->
+<!-- footer -->
+<div class="footer-bot">
+	<div class="container">
+		<div class="logo2">
+			<h2><a href="index.html"><span>Online</span> Banking</a></h2>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="copy-right">
+	<div class="agileinfo_social_icons">
+		<ul class="agileits_social_list">
+			<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#" class="w3_agile_dribble"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="#" class="w3_agile_google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<p> &copy; 2017 Online Banking. All Rights Reserved</p>
+	</div>
+</div>
+<!-- //footer -->
+
+<!-- js files -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+<!-- //js -->
+<!-- js for banner -->
+<!-- responsiveslider -->
+	<script src="js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+			  // Slideshow 4
+			  $("#slider3").responsiveSlides({
+				auto: true,
+				pager:true,
+				nav:false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+				  $('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+				  $('.events').append("<li>after event fired.</li>");
+				}
+			  });
+		
+			});
+		 </script>
+	<!-- //responsiveslider -->
+	<!-- stats -->
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<!-- //stats -->
+<!-- /js for banner -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- smooth scrolling -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- //smooth scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+		};
+		*/
+		
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		
+	});
+</script>
+<!-- //smooth-scrolling-of-move-up -->  
+<!-- video-js -->
+<script src="js/jquery.vide.min.js"></script>
+<!-- //video-js -->
+<!--gallery-js -->
+<script src="js/jquery.picEyes.js"></script>
+				<script>
+					$(function(){
+						//picturesEyes($('.demo li'));
+						$('.demo li').picEyes();
+					});
+				</script>
+<!--//gallery-js -->
+<!-- //js files -->
+
+</body>
+</html>
